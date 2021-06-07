@@ -1,6 +1,7 @@
 # RedisCache
 A spring boot application using with Redis Cache and Hibernate as JPA.
 
+Redis cache server download location for windows - https://github.com/microsoftarchive/redis/releases/tag/win-3.2.100
 
 1. Add starter - Spring-data-redis(Access+Driver)
 2. Add Redis.client - Jedis
