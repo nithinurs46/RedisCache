@@ -6,8 +6,8 @@ Redis cache server download location for windows - https://github.com/microsofta
 1. Add starter - Spring-data-redis(Access+Driver)
 2. Add Redis.client - Jedis
 <dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-redis</artifactId>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-data-redis</artifactId>
 </dependency>
 <dependency>
     <groupId>redis.clients</groupId>
@@ -36,8 +36,9 @@ This annotation may be used as a meta-annotation to create custom composed annot
 
 If RedisCache is down, we can fetch the data from DB by adding appropriate error handler
 In RedisConfig.java override the CacheErrorHandler and create an Handler class -
+
 @Override
-	public CacheErrorHandler errorHandler() {
-		return new RedisCacheErrorHandler();
-	}
+public CacheErrorHandler errorHandler() {
+	return new RedisCacheErrorHandler();
+}
 
